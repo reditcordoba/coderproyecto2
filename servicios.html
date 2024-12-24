@@ -5,13 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <title>Ejemplo Bootstrap Responsive</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <div class="Servicios">
-        <h1>Servicios</h1>
-    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">Columna 1</div>
+            <div class="col-md-4">Columna 2</div>
+            <div class="col-md-4">Columna 3</div>
+        <div class="Servicios">
+            <h1>Servicios</h1>
+        </div>
 
         <section class="servicios-detalles">
             <div class="servicio soporte">
@@ -46,24 +53,26 @@
             </div>
 
         </section>
+    </div>
 
+    <section class="banner">
 
-        <section class="banner">
+        <span class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="quienes somos.html">QUIENES SOMOS</a>
+            <a href="clientes.html">CLIENTES</a>
 
-            <span class="menu">
-                <a href="index.html">Inicio</a>
-                <a href="servicios.html">Servicios</a>
-                <a href="quienes somos.html">QUIENES SOMOS</a>
-                <a href="clientes.html">CLIENTES</a>
-            
-            </span>
+        </span>
 
-            <div class="logo">
-                <img src="logo geo.JPG" alt="Geo TI" width="30" height="20">
-                <span>geo ti Consulting</span>
-            </div>
-        </section>
-
+        <div class="logo">
+            <img src="logo geo.JPG" alt="Geo TI" width="30" height="20">
+            <span>geo ti Consulting</span>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
