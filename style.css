@@ -20,7 +20,7 @@
 .Landing {
     background-size: cover;
     background-position: center top;
-    background-image: url(/Inicio/mundo.jpg);
+    background-image: url(mundo.jpg);
 }
 
 .header {
@@ -34,6 +34,11 @@
     transition: background-color 0.3s;
     height: 500px;
 }
+
+.header h2 h3 {
+    padding: 20px;
+}
+
 
 .container {
     margin-right: auto;
@@ -92,7 +97,7 @@ button.btn.btn-primary {
 }
 
 /*Quienes somos*/
-.Quienes {    
+.Quienes {
     background-color: #00305bff;
     color: #eaf4f6ff;
     text-align: center;
