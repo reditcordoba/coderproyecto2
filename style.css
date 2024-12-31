@@ -6,129 +6,122 @@
     font-family: Open sans-serif;
 }
 
-/*
-.Servicios {
-    background-color: #eaf4f6ff;
-    color: #00305bff;
-    p {
-        color: #00305bff;
-        font-display: block;
-    }
-}
-
-.contacto {
-    background-image: url(form.jpg);
-}
-
-.clientes {
-    background-color: #eaf4f6ff;
-}
-
-.Servicios h1 {
-        text-transform: uppercase;
-        padding: 10px;
-    // grid-template-columns: repeat(2, 1fr);
-    // background-color: rgb(165, 205, 243);
-    // height: 300px;
-        line-height: 300px;
-}
-   
-    .home h4{
-        padding: 10px;
-        vertical-align: middle;
-    //    background-color: rgba(165, 205, 243, 0.361);
-        line-height: 100px;
-        font-size: 20px;
-        font-weight: normal;
-    }
-    
-    .home title{
-        background-color: rgba(165, 205, 243, 0.361);
-    }
-    */
-
+/*Inicio*/
 .header {
-    display: -moz-stack;
-    padding: 10px;
     vertical-align: middle;
     margin-top: 50px;
     line-height: 300px;
-    background-color: rgba(156, 160, 164, 0.397);
-    width: 400px;
-    text-align: left;
+    text-align: center;
+    color: white;
+    text-shadow: 2px;
+    /*background-color: rgba(0, 49, 91, 0.571);*/
 }
 
-.header img {
+.Landing {
     background-size: cover;
-    opacity: 0, 7;
+    background-position: center top;
+    background-image: url(/Inicio/mundo.jpg);
 }
 
-.header h2 {
-    padding: 10px;
-    vertical-align: middle;
-    font-size: 30px;
+.header {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 100px;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    height: 500px;
 }
 
-h1 {
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+    text-align: center;
+}
+
+/*Titulo*/
+.Clientes h1 {
     text-transform: uppercase;
     font-size: 30px;
-    margin: 20px;
     text-align: center;
+    font-weight: bolder;
     font-weight: bold;
+    padding-top: 40px;
 }
 
-
-
-.clientes {
+/*Clientes*/
+.Clientes {
     background-color: #eaf4f6ff;
-    display: flexbox;
     text-align: center;
     justify-content: center;
     margin-block: 20px;
     align-content: center;
-    margin-top: 100px;
+    margin-top: 40px;
+    height: max-content;
 }
 
-/*.clientes h1{
-    text-transform: uppercase;
-    font-size: 30px;
-    margin-top: 30px;
-    color: #00305bff;
-}*/
-
-.Quienes {
+/*Contacto*/
+.form {
     display: flexbox;
-    background-color: #00305bff;
-    color: #eaf4f6ff;
-    text-align: center;
-    justify-content: center;
-    top: 150px;
-    
+    align-content: center;
+    font-size: 18px;
+    padding: 40px;
+    margin-top: 40px;
 }
 
+button.btn.btn-primary {
+    --bs-btn-bg: rgb(0, 49, 91);
+    --bs-btn-border-color: rgb(0, 49, 91);
+    --bs-btn-hover-color: #eaf4f6ff;
+    --bs-btn-hover-transition: background-color 0.5s ease;
+}
 
-.Quienes p {
+.Contacto p {
+    background-color: #eaf4f6ff;
+    display: flexbox;
     margin-block: 20px;
     align-content: center;
     font-size: 18px;
     padding: 40px;
     margin: 40px;
     line-height: 2;
+    margin-top: 40px;
 }
 
+/*Quienes somos*/
+.Quienes {    
+    background-color: #00305bff;
+    color: #eaf4f6ff;
+    text-align: center;
+    margin-top: 60px;
+    height: max-content;
+}
+
+.Quienes p {
+    margin-block: 20px;
+    align-content: center;
+    font-size: 18px;
+    margin: 20px;
+    line-height: 2;
+}
 
 .Quienes h1 {
-    margin-top: 30px;
+    margin-top: 40px;
     font-size: 30px;
-    margin-top: 100px;
+    padding: 15px;
+    text-transform: uppercase;
 }
 
+/*Servicios*/
 .servicios-detalles {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 250px);
     gap: 5px;
-    margin-top: 140px;    
+    margin-top: 140px;
     align-content: center;
     text-align: justify;
     margin-left: 10px;
@@ -136,23 +129,21 @@ h1 {
 }
 
 .Servicios {
-    
     width: 100%;
     background-color: #dfedfbff;
-    color: #00305bff;    
+    color: #00305bff;
     justify-content: center;
     text-align: center;
     position: fixed;
     top: 60px;
     margin-left: 10px;
     margin-right: 20px;
-
 }
 
 .servicio {
     border: 1px solid dfedfbff;
     align-items: center;
-    padding: 10px;    
+    padding: 10px;
 }
 
 .servicios-detalles h2 {
@@ -164,84 +155,34 @@ h1 {
     color: #00305bff;
     font-size: 20px;
     font-weight: bold;
-    
 }
 
 .servicios-detalles p {
     font-size: 14px;
-    
 }
 
 .soporte {
     grid-area: soporte;
-    
 }
 
 .capacitacion {
     grid-area: capacitacion;
-    
-
 }
 
 .versionado {
     grid-area: versionado;
-    
-
 }
 
 .outsourcing {
     grid-area: outsourcing;
-    
-
 }
 
 .planificacion {
     grid-area: planificacion;
-    
-
 }
 
 .urgencias {
     grid-area: urgencias;
-    
-
-}
-
-.menu {
-    text-decoration-style: none;
-    align-content: center;
-    text-align: right;
-    position: fixed;
-    right: 0;
-    margin-top: 20px;
-}
-
-.menu a {
-    color: #00305bff;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 10px;
-    
-}
-
-.logo {
-    color: #00305bff;
-    text-transform: uppercase;
-    align-content: center;
-    text-align: left;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-.banner {
-    position: fixed;
-    background-color: white;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-
 }
 
 @media only screen and (min-width: 480px) {
@@ -252,14 +193,19 @@ h1 {
             "soporte capacitacion"
             "versionado outsourcing"
             "planificacion urgencias";
-
     }
-
 }
 
 @media only screen and (min-width: 480px) {
-    .banner .Quienes .servicios-detalles .clientes{
+    .banner .Quienes .servicios-detalles .clientes .Contacto .header {
         width: 100%;
     }
+}
 
+/*Footer*/
+.footer {
+    background-color: #dfedfbff;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
 }
